@@ -22,4 +22,14 @@ updatedAt    DateTime @updatedAt
 isVerfied Boolean? @default(false)
 profile String? 
 bio String? @default("")
+posts Post[]
+}
+
+
+model Post {
+  content   String?
+  post_id   Int     @id @default(autoincrement())
+  title     String
+  author    User?   @relation(fields: [author_id], references: [id])
+  author_id String?
 }
