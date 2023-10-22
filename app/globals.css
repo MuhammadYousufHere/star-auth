@@ -2,6 +2,69 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: 'GalanoRegular';
+  src:
+    url('/fonts/GalanoGrotesque-Regular.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoItalic';
+  src:
+    url('/fonts/GalanoGrotesque-Italic.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-Italic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoSemibold';
+  src:
+    url('/fonts/GalanoGrotesque-SemiBold.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoSemiboldItalic';
+  src:
+    url('/fonts/GalanoGrotesque-SemiBoldItalic.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-SemiBoldItalic.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoBold';
+  src:
+    url('/fonts/GalanoGrotesque-Bold.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoBoldExtra';
+  src:
+    url('/fonts/GalanoGrotesque-ExtraBold.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-ExtraBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'GalanoMedium';
+  src:
+    url('/fonts/GalanoGrotesque-Medium.woff2') format('woff2'),
+    url('/fonts/GalanoGrotesque-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;

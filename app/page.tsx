@@ -1,5 +1,3 @@
-import Image from 'next/image'
-
 export default function Home() {
-  return <main>Hi</main>
+  return <main style={{ fontFamily: 'GalanoRegular' }}>Hi</main>
 }
