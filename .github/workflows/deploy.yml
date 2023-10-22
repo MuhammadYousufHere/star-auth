@@ -44,6 +44,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: Detect package manager
+        id: detect-package-manager
         run: |
           if [ -f "${{ github.workspace }}/yarn.lock" ]; then
             echo "manager=yarn" >> $GITHUB_OUTPUT
@@ -65,7 +66,7 @@ jobs:
           node-version: '18.10.0'
           cache: ${{ steps.detect-package-manager.outputs.manager }}
       - name: Setup Pages
-        uses: actions/configure-pages@v1
+        uses: actions/configure-pages@v3
         with:
           static_site_generator: next
       - name: Restore cache
